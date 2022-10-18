@@ -1,0 +1,15 @@
+.navbar{
+    height: 70px;
+}
+#forBody{
+    height: 400px;
+}
+.jumbotron{
+    background-color: lightskyblue;
+}
+#footer{
+    background-color: black;
+}
+#mynavbar{
+    background-color: blueviolet;
+}
