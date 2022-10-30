@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
     <script>
-    $(function(){
+    $(function(){// Function for whole operation control
         $('.carousel').carousel({
             pause: true,        // init without autoplay (optional)
             interval: false,
@@ -19,26 +19,64 @@
     </script>
 </head>
 <body>
-    <div class="container py-5">
+    <div class="container pt-5">
+
         <div class="row">
-            <div class="carousel slide shadow" id="myCarousel2"><!-- .slide is for type of animation-->
-                        
-                <div class="carousel-inner">
-                    <div class="carousel-item active"><!-- one .carousel-item should be .active otherwise carousel will not work -->
-                        <div class="row">
+            <div class="carousel slide shadow" id="myCarousel2"><!-- Main body inc question,btn,radio -->
+                <div class="carousel-inner"><!-- another div btw main body and all question,btn,radio for whole content -->
+                    <div class="carousel-item active"><!-- it reff to slide including one question with radio and btn -->
+                        <div class="row"><!-- for question -->
                             <div class="col-md-12">
                                 <div class="text-center mt-3 display-4">
                                     Q1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, rem.
                                 </div>
                             </div>
-                            <div class="col-md-4 mt-5">
-                                <a href="#myCarousel2" class="carousel-control-next" data-slide="next"><!-- .carousel-control-next is used to for next right -->
-                                    <button class="btn btn-primary">Next</button>
-                                    <!-- .carousel-control-next-icon will create back icon. you can use your own icon or entity code -->
-                                </a>
+                        </div>
+                        <!-- radio btn allignment starts from here -->
+                        <div class="row"><!-- for radio btns -->
+                            <div class="col-6">
+                                <div class="form-check p-4 m-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn1" id="btn11">
+                                    <label class="form-check-label">
+                                      <span id="text1">OPTION 1</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check p-4 m-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn1" id="btn12" checked>
+                                    <label class="form-check-label">
+                                        <span id="text1">OPTION 2</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check p-4 ml-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn1" id="btn13" checked>
+                                    <label class="form-check-label">
+                                        <span id="text1">OPTION 3</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check p-4 ml-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn1" id="btn14" checked>
+                                    <label class="form-check-label">
+                                        <span id="text1">OPTION 4</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-10"></div><!-- nothing just to give extra space for next btn empty div -->
+                            <div class="col-2">
+                                <div class="col-md-4 mt-5">
+                                    <a href="#myCarousel2" class="carousel-control-next" data-slide="next">
+                                        <button class="btn btn-primary">Next</button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                     <div class="carousel-item">
                         <div class="row">
                             <div class="col-md-12">
@@ -46,29 +84,105 @@
                                     Q2. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, rem.
                                 </div>
                             </div>
-                            <div class="col-md-4 mt-5">
-                                <a href="#myCarousel2" class="carousel-control-next" data-slide="next"><!-- .carousel-control-next is used to for next right -->
-                                    <button class="btn btn-primary">Next</button>
-                                    <!-- .carousel-control-next-icon will create back icon. you can use your own icon or entity code -->
-                                </a>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-check p-4 m-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn2" id="btn21">
+                                    <label class="form-check-label">
+                                      <span id="text1">OPTION 1</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check p-4 m-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn2" id="btn22" checked>
+                                    <label class="form-check-label">
+                                        <span id="text1">OPTION 2</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check p-4 ml-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn2" id="btn23" checked>
+                                    <label class="form-check-label">
+                                        <span id="text1">OPTION 3</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check p-4 ml-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn2" id="btn24" checked>
+                                    <label class="form-check-label">
+                                        <span id="text1">OPTION 4</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-10"></div>
+                            <div class="col-2">
+                                <div class="col-md-4 mt-5">
+                                    <a href="#myCarousel2" class="carousel-control-next" data-slide="next"><!-- .carousel-control-next is used to for next right -->
+                                        <button class="btn btn-primary">Next</button>
+                                        <!-- .carousel-control-next-icon will create back icon. you can use your own icon or entity code -->
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    
                     <div class="carousel-item">
-                        <div class="text-center mt-3 display-4">
-                            Q3. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, rem.
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="text-center mt-3 display-4">
+                                    Q3. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, rem.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-check p-4 m-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn3" id="btn31">
+                                    <label class="form-check-label">
+                                      <span id="text1">OPTION 1</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check p-4 m-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn3" id="btn32" checked>
+                                    <label class="form-check-label">
+                                        <span id="text1">OPTION 2</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check p-4 ml-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn3" id="btn33" checked>
+                                    <label class="form-check-label">
+                                        <span id="text1">OPTION 3</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check p-4 ml-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn3" id="btn34" checked>
+                                    <label class="form-check-label">
+                                        <span id="text1">OPTION 4</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-10"></div>
+                            <div class="col-2">
+                                <div class="col-md-4 mt-4">
+                                    <button class="btn btn-primary"  data-toggle="modal" data-target="#myModal-submit">Submit</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row py-5">
-            <div class="col-4">
-                <button class="btn btn-outline-primary"  data-toggle="modal" data-target="#myModal-submit">Submit</button>
-            </div>
-        </div>
-        <div class="row py-5">
-            <h4>Note: Sample Build !!</h4>
         </div>
     </div>
     <!-- MODAL -->

@@ -1,3 +1,9 @@
 .carousel-inner{
-    height: 250px;
+    height: 470px;
+}
+body{
+    background-color: cornsilk;
+}
+.carousel{
+    background-color: darkorange;
 }
