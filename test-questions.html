@@ -19,12 +19,46 @@
     </script>
 </head>
 <body>
-    <div class="container pt-5">
-
+    <div class="container-fluid">
         <div class="row">
-            <div class="carousel slide shadow" id="myCarousel2"><!-- Main body inc question,btn,radio -->
+            <div class="col-4">
+                <div class="row">
+                    <div class="col-3 py-2 px-4" id="time-box">
+                        <h3>TIME</h3>
+                    </div>
+                    <div class="col-2 py-2 px-4" id="value-box">
+                        <h3>0</h3>
+                        <!-- ADD TIME COUNT HERE -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-5">
+        <div class="row mt-4">
+            <div class="carousel slide shadow-lg" id="myCarousel2"><!-- Main body inc question,btn,radio -->
                 <div class="carousel-inner"><!-- another div btw main body and all question,btn,radio for whole content -->
-                    <div class="carousel-item active"><!-- it reff to slide including one question with radio and btn -->
+                    <div class="carousel-item active">
+                        <div class="row mb-5 pb-5">
+                            <div class="col-md-12">
+                                <div class="text-center mt-3 display-4">
+                                    <h2 class="display-3 text-center ml-5 mr-5 pl-5 pr-5">CLICK "START" TO START THE IQ TEST!</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="hr-starting">
+                        <div class="row mt-5">
+                            <div class="col-10"></div><!-- nothing just to give extra space for next btn empty div -->
+                            <div class="col-2">
+                                <div class="col-md-4 mt-5">
+                                    <a href="#myCarousel2" class="carousel-control-next" data-slide="next">
+                                        <button class="btn btn-outline-success btn-lg">START</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item"><!-- it reff to slide including one question with radio and btn -->
                         <div class="row"><!-- for question -->
                             <div class="col-md-12">
                                 <div class="text-center mt-3 display-4">
@@ -174,6 +208,377 @@
                                 </div>
                             </div>
                             <div class="col-10"></div>
+                            <div class="col-2">
+                                <div class="col-md-4 mt-5">
+                                    <a href="#myCarousel2" class="carousel-control-next" data-slide="next">
+                                        <button class="btn btn-primary">Next</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item"><!-- it reff to slide including one question with radio and btn -->
+                        <div class="row"><!-- for question -->
+                            <div class="col-md-12">
+                                <div class="text-center mt-3 display-4">
+                                    Q4. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, rem.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- radio btn allignment starts from here -->
+                        <div class="row"><!-- for radio btns -->
+                            <div class="col-6">
+                                <div class="form-check p-4 m-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn4" id="btn41">
+                                    <label class="form-check-label">
+                                      <span id="text1">OPTION 1</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check p-4 m-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn4" id="btn42" checked>
+                                    <label class="form-check-label">
+                                        <span id="text1">OPTION 2</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check p-4 ml-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn4" id="btn43" checked>
+                                    <label class="form-check-label">
+                                        <span id="text1">OPTION 3</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check p-4 ml-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn4" id="btn44" checked>
+                                    <label class="form-check-label">
+                                        <span id="text1">OPTION 4</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-10"></div><!-- nothing just to give extra space for next btn empty div -->
+                            <div class="col-2">
+                                <div class="col-md-4 mt-5">
+                                    <a href="#myCarousel2" class="carousel-control-next" data-slide="next">
+                                        <button class="btn btn-primary">Next</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item"><!-- it reff to slide including one question with radio and btn -->
+                        <div class="row"><!-- for question -->
+                            <div class="col-md-12">
+                                <div class="text-center mt-3 display-4">
+                                    Q5. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, rem.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- radio btn allignment starts from here -->
+                        <div class="row"><!-- for radio btns -->
+                            <div class="col-6">
+                                <div class="form-check p-4 m-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn5" id="btn51">
+                                    <label class="form-check-label">
+                                      <span id="text1">OPTION 1</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check p-4 m-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn5" id="btn52" checked>
+                                    <label class="form-check-label">
+                                        <span id="text1">OPTION 2</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check p-4 ml-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn5" id="btn53" checked>
+                                    <label class="form-check-label">
+                                        <span id="text1">OPTION 3</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check p-4 ml-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn5" id="btn54" checked>
+                                    <label class="form-check-label">
+                                        <span id="text1">OPTION 4</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-10"></div><!-- nothing just to give extra space for next btn empty div -->
+                            <div class="col-2">
+                                <div class="col-md-4 mt-5">
+                                    <a href="#myCarousel2" class="carousel-control-next" data-slide="next">
+                                        <button class="btn btn-primary">Next</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item"><!-- it reff to slide including one question with radio and btn -->
+                        <div class="row"><!-- for question -->
+                            <div class="col-md-12">
+                                <div class="text-center mt-3 display-4">
+                                    Q6. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, rem.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- radio btn allignment starts from here -->
+                        <div class="row"><!-- for radio btns -->
+                            <div class="col-6">
+                                <div class="form-check p-4 m-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn6" id="btn61">
+                                    <label class="form-check-label">
+                                      <span id="text1">OPTION 1</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check p-4 m-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn6" id="btn62" checked>
+                                    <label class="form-check-label">
+                                        <span id="text1">OPTION 2</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check p-4 ml-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn6" id="btn63" checked>
+                                    <label class="form-check-label">
+                                        <span id="text1">OPTION 3</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check p-4 ml-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn6" id="btn64" checked>
+                                    <label class="form-check-label">
+                                        <span id="text1">OPTION 4</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-10"></div><!-- nothing just to give extra space for next btn empty div -->
+                            <div class="col-2">
+                                <div class="col-md-4 mt-5">
+                                    <a href="#myCarousel2" class="carousel-control-next" data-slide="next">
+                                        <button class="btn btn-primary">Next</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item"><!-- it reff to slide including one question with radio and btn -->
+                        <div class="row"><!-- for question -->
+                            <div class="col-md-12">
+                                <div class="text-center mt-3 display-4">
+                                    Q7. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, rem.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- radio btn allignment starts from here -->
+                        <div class="row"><!-- for radio btns -->
+                            <div class="col-6">
+                                <div class="form-check p-4 m-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn7" id="btn71">
+                                    <label class="form-check-label">
+                                      <span id="text1">OPTION 1</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check p-4 m-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn7" id="btn72" checked>
+                                    <label class="form-check-label">
+                                        <span id="text1">OPTION 2</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check p-4 ml-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn7" id="btn73" checked>
+                                    <label class="form-check-label">
+                                        <span id="text1">OPTION 3</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check p-4 ml-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn7" id="btn74" checked>
+                                    <label class="form-check-label">
+                                        <span id="text1">OPTION 4</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-10"></div><!-- nothing just to give extra space for next btn empty div -->
+                            <div class="col-2">
+                                <div class="col-md-4 mt-5">
+                                    <a href="#myCarousel2" class="carousel-control-next" data-slide="next">
+                                        <button class="btn btn-primary">Next</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item"><!-- it reff to slide including one question with radio and btn -->
+                        <div class="row"><!-- for question -->
+                            <div class="col-md-12">
+                                <div class="text-center mt-3 display-4">
+                                    Q8. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, rem.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- radio btn allignment starts from here -->
+                        <div class="row"><!-- for radio btns -->
+                            <div class="col-6">
+                                <div class="form-check p-4 m-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn8" id="btn81">
+                                    <label class="form-check-label">
+                                      <span id="text1">OPTION 1</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check p-4 m-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn8" id="btn82" checked>
+                                    <label class="form-check-label">
+                                        <span id="text1">OPTION 2</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check p-4 ml-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn8" id="btn83" checked>
+                                    <label class="form-check-label">
+                                        <span id="text1">OPTION 3</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check p-4 ml-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn8" id="btn84" checked>
+                                    <label class="form-check-label">
+                                        <span id="text1">OPTION 4</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-10"></div><!-- nothing just to give extra space for next btn empty div -->
+                            <div class="col-2">
+                                <div class="col-md-4 mt-5">
+                                    <a href="#myCarousel2" class="carousel-control-next" data-slide="next">
+                                        <button class="btn btn-primary">Next</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item"><!-- it reff to slide including one question with radio and btn -->
+                        <div class="row"><!-- for question -->
+                            <div class="col-md-12">
+                                <div class="text-center mt-3 display-4">
+                                    Q9. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, rem.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- radio btn allignment starts from here -->
+                        <div class="row"><!-- for radio btns -->
+                            <div class="col-6">
+                                <div class="form-check p-4 m-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn9" id="btn91">
+                                    <label class="form-check-label">
+                                      <span id="text1">OPTION 1</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check p-4 m-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn9" id="btn92" checked>
+                                    <label class="form-check-label">
+                                        <span id="text1">OPTION 2</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check p-4 ml-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn9" id="btn93" checked>
+                                    <label class="form-check-label">
+                                        <span id="text1">OPTION 3</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check p-4 ml-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn9" id="btn94" checked>
+                                    <label class="form-check-label">
+                                        <span id="text1">OPTION 4</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-10"></div><!-- nothing just to give extra space for next btn empty div -->
+                            <div class="col-2">
+                                <div class="col-md-4 mt-5">
+                                    <a href="#myCarousel2" class="carousel-control-next" data-slide="next">
+                                        <button class="btn btn-primary">Next</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item"><!-- it reff to slide including one question with radio and btn -->
+                        <div class="row"><!-- for question -->
+                            <div class="col-md-12">
+                                <div class="text-center mt-3 display-4">
+                                    Q10. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, rem.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- radio btn allignment starts from here -->
+                        <div class="row"><!-- for radio btns -->
+                            <div class="col-6">
+                                <div class="form-check p-4 m-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn10" id="btn101">
+                                    <label class="form-check-label">
+                                      <span id="text1">OPTION 1</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check p-4 m-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn10" id="btn102" checked>
+                                    <label class="form-check-label">
+                                        <span id="text1">OPTION 2</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check p-4 ml-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn10" id="btn103" checked>
+                                    <label class="form-check-label">
+                                        <span id="text1">OPTION 3</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check p-4 ml-5">
+                                    <input class="form-check-input" type="radio" name="radio-btn10" id="btn104" checked>
+                                    <label class="form-check-label">
+                                        <span id="text1">OPTION 4</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-10"></div><!-- nothing just to give extra space for next btn empty div -->
                             <div class="col-2">
                                 <div class="col-md-4 mt-4">
                                     <button class="btn btn-primary"  data-toggle="modal" data-target="#myModal-submit">Submit</button>

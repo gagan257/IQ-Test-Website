@@ -5,5 +5,16 @@ body{
     background-color: cornsilk;
 }
 .carousel{
-    background-color: darkorange;
+    background-color: azure;
+}
+#time-box{
+    background-color: chartreuse;
+    border: 1px solid black;
+}
+#value-box{
+    background-color: darkcyan;
+    border: 1px solid black;
+}
+.hr-starting{
+    border-top: 1px dashed black;
 }
