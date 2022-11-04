@@ -16,3 +16,6 @@
 body{
     background-image: url(Images/background-img-1.webp);
 }
+#heading-card{
+    background-color: azure;
+}
