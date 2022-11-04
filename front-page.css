@@ -2,7 +2,7 @@
     height: 70px;
 }
 #forBody{
-    height: 400px;
+    height: 460px;
 }
 .jumbotron{
     background-color: lightskyblue;
@@ -18,4 +18,19 @@ body{
 }
 #heading-card{
     background-color: azure;
+}
+#card-heading{
+    height: 450px;
+}
+.typed-out{
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    font-size: 20 rem;
+    width: 0;
+    animation: typing 4s forwards;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
 }
