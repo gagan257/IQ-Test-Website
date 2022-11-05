@@ -24,7 +24,6 @@ body{
 }
 .typed-out{
     overflow: hidden;
-    border-right: .15em solid orange;
     white-space: nowrap;
     font-size: 20 rem;
     width: 0;
