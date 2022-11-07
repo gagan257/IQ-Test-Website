@@ -33,3 +33,12 @@ body{
     from { width: 0 }
     to { width: 100% }
 }
+#about-us:hover{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 16px;
+    padding: 10px 10px;
+}
