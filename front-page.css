@@ -42,3 +42,17 @@ body{
     border-radius: 16px;
     padding: 10px 10px;
 }
+#about-iq-div{
+    background-color: white;
+}
+#about-iq-card{
+    background-color: white;
+    border: none;
+}
+#about-iq-hr{
+    width: 40%;
+}
+#beta-version{
+    background-color: black;
+    color: red;
+}
