@@ -16,3 +16,30 @@
     background-color: purple;
     height: 90px;
 }
+.about-hr{
+    width: 50%;
+    border: solid;
+}
+#about-card1{
+    background-color: black;
+    color: white;
+}
+body{
+    background-image: url(Images/question-mark-bg.jpg);
+}
+.about-hr-2{
+    width: 80%;
+    border: dotted;
+}
+#icons-about{
+    text-decoration: none;
+    color: white;
+}
+#icons-about:hover{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 16px;
+}
