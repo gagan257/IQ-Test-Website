@@ -1,616 +1,600 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Questions</title>
+    <title>Test Questions</title>
     <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.css">
     <link rel="stylesheet" href="test-questions.css">
+    <link rel="icon" href="Images/question-mark-img.png">
     
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
     <script>
-    $(function(){// Function for whole operation control
-        $('.carousel').carousel({
-            pause: true,        // init without autoplay (optional)
+        $('#myCarousel3').carousel({
             interval: false,
-            wrap:false          // do not loop
         });
-    });
     </script>
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-4">
-                <div class="row">
-                    <div class="col-3 py-2 px-4" id="time-box">
-                        <h3>TIME</h3>
-                    </div>
-                    <div class="col-2 py-2 px-4" id="value-box">
-                        <h3>0</h3>
-                        <!-- ADD TIME COUNT HERE -->
-                    </div>
-                </div>
+        <div class="row fixed-top">
+            <div class="col-2 py-0">
+                <h4 class="text-white display-5">TIME TAKEN:</h4>
             </div>
+            <div class="col-2 py-0">
+                <h4 class="text-white">0</h4>
+            </div>
+            <div class="col-5"></div>
+            <div class="col-2 mt-2">
+                <a href="submit.html" class="a-submit" style="text-decoration: none;"><button class="btn btn-outline-primary rounded-pill btn-block">Submit</button></a>
+            </div>
+            <div class="col-1"></div>
         </div>
     </div>
-    <div class="container-fluid mt-5">
-        <div class="row mt-4">
-            <div class="carousel slide shadow-lg" id="myCarousel2"><!-- Main body inc question,btn,radio -->
-                <div class="carousel-inner"><!-- another div btw main body and all question,btn,radio for whole content -->
-                    <div class="carousel-item active">
-                        <div class="row mb-5 pb-5">
-                            <div class="col-md-12">
-                                <div class="text-center mt-3 display-4">
-                                    <h2 class="display-3 text-center ml-5 mr-5 pl-5 pr-5">CLICK "START" TO START THE IQ TEST!</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <hr class="hr-starting">
-                        <div class="row mt-5">
-                            <div class="col-10"></div><!-- nothing just to give extra space for next btn empty div -->
-                            <div class="col-2">
-                                <div class="col-md-4 mt-5">
-                                    <a href="#myCarousel2" class="carousel-control-next" data-slide="next">
-                                        <button class="btn btn-outline-success btn-lg">START</button>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item"><!-- it reff to slide including one question with radio and btn -->
-                        <div class="row"><!-- for question -->
-                            <div class="col-md-12">
-                                <div class="text-center mt-3 display-4">
-                                    Q1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, rem.
-                                </div>
-                            </div>
-                        </div>
-                        <!-- radio btn allignment starts from here -->
-                        <div class="row"><!-- for radio btns -->
-                            <div class="col-6">
-                                <div class="form-check p-4 m-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn1" id="btn11">
-                                    <label class="form-check-label">
-                                      <span id="text1">OPTION 1</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check p-4 m-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn1" id="btn12" checked>
-                                    <label class="form-check-label">
-                                        <span id="text1">OPTION 2</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check p-4 ml-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn1" id="btn13" checked>
-                                    <label class="form-check-label">
-                                        <span id="text1">OPTION 3</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check p-4 ml-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn1" id="btn14" checked>
-                                    <label class="form-check-label">
-                                        <span id="text1">OPTION 4</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-10"></div><!-- nothing just to give extra space for next btn empty div -->
-                            <div class="col-2">
-                                <div class="col-md-4 mt-5">
-                                    <a href="#myCarousel2" class="carousel-control-next" data-slide="next">
-                                        <button class="btn btn-primary">Next</button>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="text-center mt-3 display-4">
-                                    Q2. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, rem.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="form-check p-4 m-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn2" id="btn21">
-                                    <label class="form-check-label">
-                                      <span id="text1">OPTION 1</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check p-4 m-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn2" id="btn22" checked>
-                                    <label class="form-check-label">
-                                        <span id="text1">OPTION 2</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check p-4 ml-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn2" id="btn23" checked>
-                                    <label class="form-check-label">
-                                        <span id="text1">OPTION 3</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check p-4 ml-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn2" id="btn24" checked>
-                                    <label class="form-check-label">
-                                        <span id="text1">OPTION 4</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-10"></div>
-                            <div class="col-2">
-                                <div class="col-md-4 mt-5">
-                                    <a href="#myCarousel2" class="carousel-control-next" data-slide="next"><!-- .carousel-control-next is used to for next right -->
-                                        <button class="btn btn-primary">Next</button>
-                                        <!-- .carousel-control-next-icon will create back icon. you can use your own icon or entity code -->
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <div class="container-fluid">
+        <div class="row py-3">
+            <div class="col py-3">
+                <div class="carousel slide mt-3" id="myCarousel3">
                     
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="text-center mt-3 display-4">
-                                    Q3. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, rem.
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                                <!-- QUESTION 1 starts here -->
+                            <div class="row">
+                                <div class="col" style="background-color: black;">
+                                    <h3 class="display-4 text-white text-center">Q1.Complete the series</h3>
+                                    <br>
+                                    <h3 class="display-4 text-white text-center">8-6-9-5-10-4-11-?</h3>
+                                    <h3 class="md-3"><span class="badge badge-pill badge-success">Easy</span></h3>
                                 </div>
                             </div>
+                            <!-- 1.1 -->
+                            <div class="row mt-5">
+                                <div class="col-3"></div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn1" id="btn11">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">3</h4>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn1" id="btn12">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">2</h4>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 1.2 -->
+                            <div class="row mt-5">
+                                <div class="col-3"></div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn1" id="btn13">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">7</h4>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn1" id="btn14">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">0</h4>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        <img src="Images/black_img_2.jpg" alt="">
                         </div>
-                        
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="form-check p-4 m-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn3" id="btn31">
-                                    <label class="form-check-label">
-                                      <span id="text1">OPTION 1</span>
-                                    </label>
+                            <!-- QUESTION 2 starts here-->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col" style="background-color: black;">
+                                    <h3 class="display-4 text-white text-center">Q2.Choose the number that is 1/4 of 1/2 of 1/5 of 200</h3>
+                                    <h3 class="md-3"><span class="badge badge-pill badge-success">Easy</span></h3>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <div class="form-check p-4 m-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn3" id="btn32" checked>
-                                    <label class="form-check-label">
-                                        <span id="text1">OPTION 2</span>
-                                    </label>
+                            <!-- 2.1 -->
+                            <div class="row mt-5">
+                                <div class="col-3"></div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn2" id="btn21">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">2</h4>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn2" id="btn22">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">5</h4>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <div class="form-check p-4 ml-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn3" id="btn33" checked>
-                                    <label class="form-check-label">
-                                        <span id="text1">OPTION 3</span>
-                                    </label>
+                            <!-- 2.2 -->
+                            <div class="row mt-5">
+                                <div class="col-3"></div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn2" id="btn23">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">10</h4>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn2" id="btn24">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">25</h4>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <div class="form-check p-4 ml-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn3" id="btn34" checked>
-                                    <label class="form-check-label">
-                                        <span id="text1">OPTION 4</span>
-                                    </label>
+                            <img src="Images/black_img_2.jpg" alt="">
+                        </div>
+                        <!-- QUESTION 3 starts here... -->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col" style="background-color: black;">
+                                    <h3 class="display-4 text-white text-center">Q3.John needs 13 bottles of water from the store John can only carry 3 at a time. What is the maximum number of trips. John needs to make to the store</h3>
+                                    <h3 class="md-3"><span class="badge badge-pill badge-warning text-white">Medium</span></h3>
                                 </div>
                             </div>
-                            <div class="col-10"></div>
-                            <div class="col-2">
-                                <div class="col-md-4 mt-5">
-                                    <a href="#myCarousel2" class="carousel-control-next" data-slide="next">
-                                        <button class="btn btn-primary">Next</button>
-                                    </a>
+                            <!-- 3.1 -->
+                            <div class="row">
+                                <div class="col-3"></div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn3" id="btn31">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">3</h4>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn3" id="btn32">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">4</h4>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
+                            <!-- 3.2 -->
+                            <div class="row">
+                                <div class="col-3"></div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn3" id="btn33">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">6</h4>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn3" id="btn34">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">5</h4>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="Images/black_img_2.jpg" alt="">
+                        </div>
+                        <!-- QUESTION 4 starts here... -->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col" style="background-color: black;">
+                                    <h3 class="display-4 text-white text-center">Q4.Mary who is sixteen years old is four times as old as her brother. How old will Mary be when she is twice as old as her brother?</h3>
+                                    <h3 class="md-3"><span class="badge badge-pill badge-warning text-white">Medium</span></h3>
+                                </div>
+                            </div>
+                            <!-- 4.1 -->
+                            <div class="row mt-5">
+                                <div class="col-3"></div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn4" id="btn41">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">20</h4>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn4" id="btn42">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">24</h4>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 4.2 -->
+                            <div class="row mt-5">
+                                <div class="col-3"></div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn4" id="btn43">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">25</h4>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn4" id="btn44">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">26</h4>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="Images/black_img_2.jpg" alt="">
+                        </div>
+                        <!-- QUESTION 5 starts here... -->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col" style="background-color: black;">
+                                    <h3 class="display-4 text-white text-center">Q5.The day after the day after tomorrow is four days before monday. What day is it today?</h3>
+                                    <h3 class="md-3"><span class="badge badge-pill badge-warning text-white">Medium</span></h3>
+                                </div>
+                            </div>
+                            <!-- 5.1 -->
+                            <div class="row mt-5">
+                                <div class="col-3"></div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn5" id="btn51">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">Sunday</h4>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn5" id="btn52">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">Monday</h4>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 5.2 -->
+                            <div class="row mt-5">
+                                <div class="col-3"></div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn5" id="btn53">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">Friday</h4>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn5" id="btn54">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">Saturday</h4>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="Images/black_img_2.jpg" alt="">
+                        </div>
+                        <!-- QUESTION 6 starts here... -->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col" style="background-color: black;">
+                                    <h3 class="display-4 text-white text-center">Q6.What letter should appear next in the sequence</h3>
+                                    <br>
+                                    <h3 class="display-4 text-white text-center">K J H G __</h3>
+                                    <h3 class="md-3"><span class="badge badge-pill badge-danger text-white">Hard</span></h3>
+                                </div>
+                            </div>
+                            <!-- 6.1 -->
+                            <div class="row mt-5">
+                                <div class="col-3"></div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn6" id="btn61">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">A</h4>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn6" id="btn62">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">L</h4>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 6.2 -->
+                            <div class="row mt-5">
+                                <div class="col-3"></div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn6" id="btn63">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">K</h4>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn6" id="btn64">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">F</h4>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="Images/black_img_2.jpg" alt="">
+                        </div>
+                        <!-- QUESTION 7 starts here... -->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col" style="background-color: black;">
+                                    <h3 class="display-4 text-white text-center">Q7.The average weight of girls is 15 and average weight of boys is 30 and average weight of boys & girls both is 25. If the number of boys is 12, then the number of girls is?</h3>
+                                    <h3 class="md-3"><span class="badge badge-pill badge-danger text-white">Hard</span></h3>
+                                </div>
+                            </div>
+                            <!-- 7.1 -->
+                            <div class="row">
+                                <div class="col-3"></div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn7" id="btn71">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">4</h4>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn7" id="btn72">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">6</h4>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 7.2 -->
+                            <div class="row">
+                                <div class="col-3"></div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn7" id="btn73">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">10</h4>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn7" id="btn74">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">18</h4>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="Images/black_img_2.jpg" alt="">
+                        </div>
+                        <!-- QUESTION 8 starts here... -->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col" style="background-color: black;">
+                                    <h3 class="display-4 text-white text-center">Q8.Ralph likes 25 but not 24 he likes 400 nut not 300 he likes 144 but not 145 Which does he like?</h3>
+                                    <h3 class="md-3"><span class="badge badge-pill badge-warning text-white">Medium</span></h3>
+                                </div>
+                            </div>
+                            <!-- 8.1 -->
+                            <div class="row mt-5">
+                                <div class="col-3"></div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn8" id="btn81">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">10</h4>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn8" id="btn82">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">50</h4>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 8.2 -->
+                            <div class="row mt-5">
+                                <div class="col-3"></div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn8" id="btn83">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">124</h4>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn8" id="btn84">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">1600</h4>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="Images/black_img_2.jpg" alt="">
+                        </div>
+                        <!-- QUESTION 9 starts here... -->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col" style="background-color: black;">
+                                    <h3 class="display-4 text-white text-center">Q9.Pipe A cam fill a tank in 12 hour & pipe B can fill it in 15 hours. A third pipe C can empty it in 20 hours. Initially pipe A was opened after one hour pipe B was opened and then after 1 hour pipe C was also opened. In how many hours the tank will be full</h3>
+                                    <h3 class="md-3"><span class="badge badge-pill badge-danger text-white">Hard</span></h3>
+                                </div>
+                            </div>
+                            <!-- 9.1 -->
+                            <div class="row">
+                                <div class="col-3"></div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn9" id="btn91">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">9.66 hour</h4>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn9" id="btn92">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">6.66 hour</h4>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 9.2 -->
+                            <div class="row">
+                                <div class="col-3"></div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn9" id="btn93">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">10 hour</h4>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn9" id="btn94">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">none of these</h4>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="Images/black_img_2.jpg" alt="">
+                        </div>
+                        <!-- QUESTION 10 starts here... -->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col" style="background-color: black;">
+                                    <h3 class="display-4 text-white text-center">Q10. What number come next in the sequence</h3>
+                                    <br>
+                                    <h3 class="display-4 text-white text-center">1-2-4-7-11-16-?</h3>
+                                    <h3 class="md-3"><span class="badge badge-pill badge-warning text-white">Medium</span></h3>
+                                </div>
+                            </div>
+                            <!-- 10.1 -->
+                            <div class="row mt-5">
+                                <div class="col-3"></div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn10" id="btn101">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">22</h4>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn10" id="btn102">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">23</h4>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 10.2 -->
+                            <div class="row mt-5">
+                                <div class="col-3"></div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn10" id="btn103">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">24</h4>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="btn10" id="btn104">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <h4 class="text-white display-5">25</h4>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="Images/black_img_2.jpg" alt="">
                         </div>
                     </div>
+                    <!-- for indicators (left-right) -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel3" data-slide-to="0" active></li>
+                        <li data-target="#myCarousel3" data-slide-to="1"></li>
+                        <li data-target="#myCarousel3" data-slide-to="2"></li>
+                        <li data-target="#myCarousel3" data-slide-to="3"></li>
+                        <li data-target="#myCarousel3" data-slide-to="4"></li>
+                        <li data-target="#myCarousel3" data-slide-to="5"></li>
+                        <li data-target="#myCarousel3" data-slide-to="6"></li>
+                        <li data-target="#myCarousel3" data-slide-to="7"></li>
+                        <li data-target="#myCarousel3" data-slide-to="8"></li>
+                        <li data-target="#myCarousel3" data-slide-to="9"></li>
+                    </ol>
 
-                    <div class="carousel-item"><!-- it reff to slide including one question with radio and btn -->
-                        <div class="row"><!-- for question -->
-                            <div class="col-md-12">
-                                <div class="text-center mt-3 display-4">
-                                    Q4. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, rem.
-                                </div>
-                            </div>
-                        </div>
-                        <!-- radio btn allignment starts from here -->
-                        <div class="row"><!-- for radio btns -->
-                            <div class="col-6">
-                                <div class="form-check p-4 m-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn4" id="btn41">
-                                    <label class="form-check-label">
-                                      <span id="text1">OPTION 1</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check p-4 m-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn4" id="btn42" checked>
-                                    <label class="form-check-label">
-                                        <span id="text1">OPTION 2</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check p-4 ml-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn4" id="btn43" checked>
-                                    <label class="form-check-label">
-                                        <span id="text1">OPTION 3</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check p-4 ml-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn4" id="btn44" checked>
-                                    <label class="form-check-label">
-                                        <span id="text1">OPTION 4</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-10"></div><!-- nothing just to give extra space for next btn empty div -->
-                            <div class="col-2">
-                                <div class="col-md-4 mt-5">
-                                    <a href="#myCarousel2" class="carousel-control-next" data-slide="next">
-                                        <button class="btn btn-primary">Next</button>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item"><!-- it reff to slide including one question with radio and btn -->
-                        <div class="row"><!-- for question -->
-                            <div class="col-md-12">
-                                <div class="text-center mt-3 display-4">
-                                    Q5. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, rem.
-                                </div>
-                            </div>
-                        </div>
-                        <!-- radio btn allignment starts from here -->
-                        <div class="row"><!-- for radio btns -->
-                            <div class="col-6">
-                                <div class="form-check p-4 m-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn5" id="btn51">
-                                    <label class="form-check-label">
-                                      <span id="text1">OPTION 1</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check p-4 m-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn5" id="btn52" checked>
-                                    <label class="form-check-label">
-                                        <span id="text1">OPTION 2</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check p-4 ml-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn5" id="btn53" checked>
-                                    <label class="form-check-label">
-                                        <span id="text1">OPTION 3</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check p-4 ml-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn5" id="btn54" checked>
-                                    <label class="form-check-label">
-                                        <span id="text1">OPTION 4</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-10"></div><!-- nothing just to give extra space for next btn empty div -->
-                            <div class="col-2">
-                                <div class="col-md-4 mt-5">
-                                    <a href="#myCarousel2" class="carousel-control-next" data-slide="next">
-                                        <button class="btn btn-primary">Next</button>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item"><!-- it reff to slide including one question with radio and btn -->
-                        <div class="row"><!-- for question -->
-                            <div class="col-md-12">
-                                <div class="text-center mt-3 display-4">
-                                    Q6. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, rem.
-                                </div>
-                            </div>
-                        </div>
-                        <!-- radio btn allignment starts from here -->
-                        <div class="row"><!-- for radio btns -->
-                            <div class="col-6">
-                                <div class="form-check p-4 m-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn6" id="btn61">
-                                    <label class="form-check-label">
-                                      <span id="text1">OPTION 1</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check p-4 m-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn6" id="btn62" checked>
-                                    <label class="form-check-label">
-                                        <span id="text1">OPTION 2</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check p-4 ml-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn6" id="btn63" checked>
-                                    <label class="form-check-label">
-                                        <span id="text1">OPTION 3</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check p-4 ml-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn6" id="btn64" checked>
-                                    <label class="form-check-label">
-                                        <span id="text1">OPTION 4</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-10"></div><!-- nothing just to give extra space for next btn empty div -->
-                            <div class="col-2">
-                                <div class="col-md-4 mt-5">
-                                    <a href="#myCarousel2" class="carousel-control-next" data-slide="next">
-                                        <button class="btn btn-primary">Next</button>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item"><!-- it reff to slide including one question with radio and btn -->
-                        <div class="row"><!-- for question -->
-                            <div class="col-md-12">
-                                <div class="text-center mt-3 display-4">
-                                    Q7. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, rem.
-                                </div>
-                            </div>
-                        </div>
-                        <!-- radio btn allignment starts from here -->
-                        <div class="row"><!-- for radio btns -->
-                            <div class="col-6">
-                                <div class="form-check p-4 m-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn7" id="btn71">
-                                    <label class="form-check-label">
-                                      <span id="text1">OPTION 1</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check p-4 m-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn7" id="btn72" checked>
-                                    <label class="form-check-label">
-                                        <span id="text1">OPTION 2</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check p-4 ml-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn7" id="btn73" checked>
-                                    <label class="form-check-label">
-                                        <span id="text1">OPTION 3</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check p-4 ml-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn7" id="btn74" checked>
-                                    <label class="form-check-label">
-                                        <span id="text1">OPTION 4</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-10"></div><!-- nothing just to give extra space for next btn empty div -->
-                            <div class="col-2">
-                                <div class="col-md-4 mt-5">
-                                    <a href="#myCarousel2" class="carousel-control-next" data-slide="next">
-                                        <button class="btn btn-primary">Next</button>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item"><!-- it reff to slide including one question with radio and btn -->
-                        <div class="row"><!-- for question -->
-                            <div class="col-md-12">
-                                <div class="text-center mt-3 display-4">
-                                    Q8. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, rem.
-                                </div>
-                            </div>
-                        </div>
-                        <!-- radio btn allignment starts from here -->
-                        <div class="row"><!-- for radio btns -->
-                            <div class="col-6">
-                                <div class="form-check p-4 m-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn8" id="btn81">
-                                    <label class="form-check-label">
-                                      <span id="text1">OPTION 1</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check p-4 m-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn8" id="btn82" checked>
-                                    <label class="form-check-label">
-                                        <span id="text1">OPTION 2</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check p-4 ml-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn8" id="btn83" checked>
-                                    <label class="form-check-label">
-                                        <span id="text1">OPTION 3</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check p-4 ml-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn8" id="btn84" checked>
-                                    <label class="form-check-label">
-                                        <span id="text1">OPTION 4</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-10"></div><!-- nothing just to give extra space for next btn empty div -->
-                            <div class="col-2">
-                                <div class="col-md-4 mt-5">
-                                    <a href="#myCarousel2" class="carousel-control-next" data-slide="next">
-                                        <button class="btn btn-primary">Next</button>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item"><!-- it reff to slide including one question with radio and btn -->
-                        <div class="row"><!-- for question -->
-                            <div class="col-md-12">
-                                <div class="text-center mt-3 display-4">
-                                    Q9. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, rem.
-                                </div>
-                            </div>
-                        </div>
-                        <!-- radio btn allignment starts from here -->
-                        <div class="row"><!-- for radio btns -->
-                            <div class="col-6">
-                                <div class="form-check p-4 m-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn9" id="btn91">
-                                    <label class="form-check-label">
-                                      <span id="text1">OPTION 1</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check p-4 m-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn9" id="btn92" checked>
-                                    <label class="form-check-label">
-                                        <span id="text1">OPTION 2</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check p-4 ml-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn9" id="btn93" checked>
-                                    <label class="form-check-label">
-                                        <span id="text1">OPTION 3</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check p-4 ml-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn9" id="btn94" checked>
-                                    <label class="form-check-label">
-                                        <span id="text1">OPTION 4</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-10"></div><!-- nothing just to give extra space for next btn empty div -->
-                            <div class="col-2">
-                                <div class="col-md-4 mt-5">
-                                    <a href="#myCarousel2" class="carousel-control-next" data-slide="next">
-                                        <button class="btn btn-primary">Next</button>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item"><!-- it reff to slide including one question with radio and btn -->
-                        <div class="row"><!-- for question -->
-                            <div class="col-md-12">
-                                <div class="text-center mt-3 display-4">
-                                    Q10. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, rem.
-                                </div>
-                            </div>
-                        </div>
-                        <!-- radio btn allignment starts from here -->
-                        <div class="row"><!-- for radio btns -->
-                            <div class="col-6">
-                                <div class="form-check p-4 m-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn10" id="btn101">
-                                    <label class="form-check-label">
-                                      <span id="text1">OPTION 1</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check p-4 m-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn10" id="btn102" checked>
-                                    <label class="form-check-label">
-                                        <span id="text1">OPTION 2</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check p-4 ml-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn10" id="btn103" checked>
-                                    <label class="form-check-label">
-                                        <span id="text1">OPTION 3</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check p-4 ml-5">
-                                    <input class="form-check-input" type="radio" name="radio-btn10" id="btn104" checked>
-                                    <label class="form-check-label">
-                                        <span id="text1">OPTION 4</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-10"></div><!-- nothing just to give extra space for next btn empty div -->
-                            <div class="col-2">
-                                <div class="col-md-4 mt-4">
-                                    <button class="btn btn-primary"  data-toggle="modal" data-target="#myModal-submit">Submit</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <a href="#myCarousel3" class="carousel-control-prev" data-slide="prev"><!-- .carousel-control-prev is used to for prev left -->
+                        <span class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                            <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+                          </svg></span>
+                        <!-- .carousel-control-prev-icon will create back icon. you can use your own icon or entity code -->
+                    </a>
+                    <a href="#myCarousel3" class="carousel-control-next" data-slide="next"><!-- .carousel-control-next is used to for next right -->
+                        <span class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                          </svg></span>
+                        <!-- .carousel-control-next-icon will create back icon. you can use your own icon or entity code -->
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- MODAL -->
-    <div class="modal fade" id="myModal-submit" data-backdrop="static"><!-- data-backdrop="static" is used for no background click close -->
+    <!-- Modal starts here... -->
+    <!-- <div class="modal fade" id="myModal-submit" data-backdrop="static">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title">Title goes here...</h3>
+                    <h3 class="modal-title">Submit Test?</h3>
                     <button class="close" data-dismiss="modal">
                         <span>&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, quam in. Porro enim quam repellendus!
+                    Your Test will be submitted
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-success" data-dismiss="modal">Submit</button>
-                    <button class="btn btn-danger" data-dismiss="modal">
+                    <button class="btn btn-success rounded-pill" data-dismiss="modal"><a href="submit.html">Submit</a></button>
+                    <button class="btn btn-danger rounded-pill" data-dismiss="modal">
                         Go Back
                     </button>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </body>
 </html>
