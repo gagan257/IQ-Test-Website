@@ -13,7 +13,7 @@
     <div class="container mt-5 shadow-lg">
         <div class="row">
             <div class="col">
-                <div class="card">
+                <div class="card" style="background-color: black;">
                     <div class="row">
                         <div class="col-4">
                             <img src="Images/green-tick-img.jpg"  class="card-img" alt="">
@@ -21,14 +21,49 @@
                         <div class="col-8">
                             <div class="card-body">
                                 <div class="card-title">
-                                    <h3 class="display-4 text-center">Your Test has been submitted!</h3>
+                                    <h3 class="display-4 text-center text-white">Your Test has been submitted!</h3>
                                 </div>
                                 <hr class="submitted">
                                 <div class="card-text">
-                                    <h4 class="display-5 text-center">Currently the site is in BETA version!</h4>
-                                    <br>
-                                    <h4 class="display-5 text-center">working on results... :)</h4>
-                                    <hr>
+                                    <div class="row">
+                                        <div class="col">
+                                            <h4 class="display-4 text-center text-white">SCORECARD</h4>
+                                            <hr class="scorecard-hr">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <h4 class="display-4 text-white">Minutes:</h4>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <h4 class="display-4 text-center text-white" id="minutess-value"></h4>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <h4 class="display-4 text-white">Seconds:</h4>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <h4 class="display-4 text-center text-white id="seconds-value"></h4>
+                                        </div>
+                                        <hr>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <h4 class="display-4 text-white">SCORE:</h4>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <h4 id="score" class="display-4 text-center text-white"></h4>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <h4 class="display-4 text-white"> IQ SCORE:  110</h4>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <h4 id="score" class="display-4 text-center text-white"></h4>
+                                        </div>
+                                    </div>
                                     <a href="https://theiqtest.netlify.app/" style="text-decoration: none;">
                                         <button class="btn btn-danger btn-block rounded-pill back-to-site">Back to Site</button>
                                     </a>
@@ -40,5 +75,6 @@
             </div>
         </div>
     </div>
+    <script src="submit.js"></script>
 </body>
 </html>

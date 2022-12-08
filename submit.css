@@ -1,4 +1,14 @@
 .submitted{
     width: 50%;
-    border: dotted solid black;
+    border: dotted solid white;
+}
+.scorecard-hr{
+    width: 50%;
+    border: solid white;
+}
+body{
+    background-color: azure;
+}
+.container{
+    background-color: black;
 }

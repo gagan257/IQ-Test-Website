@@ -17,19 +17,22 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row fixed-top">
-            <div class="col-2 py-0">
-                <h4 class="text-white display-5">TIME TAKEN:</h4>
+        <div class="row">
+            <div class="col-4">
+                <div class="row">
+                    <div  id="value-box">
+                        <div class="container-timer">
+                            <div class="container-timer-time">
+                                <span class="timer-digit-1" id="timer-min">00 </span>
+                                <span>:</span>
+                                <span class="timer-digit-2" id="timer-sec">00 </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-2 py-0">
-                <h4 class="text-white">0</h4>
-            </div>
-            <div class="col-5"></div>
-            <div class="col-2 mt-2">
-                <a href="submit.html" class="a-submit" style="text-decoration: none;"><button class="btn btn-outline-primary rounded-pill btn-block">Submit</button></a>
-            </div>
-            <div class="col-1"></div>
         </div>
+
     </div>
     <div class="container-fluid">
         <div class="row py-3">
@@ -541,6 +544,14 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col-8"></div>
+                                    <div class="col-2 mt-2">
+                                       <a href="submit.html" target="_blank" id="sub1"><button class="btn btn-outline-primary rounded-pill btn-block">Submit</button></a>
+                                    </div>
+                                    <div class="col-1"></div>
+                                </div>
+                            </div>
                             <img src="Images/black_img_2.jpg" alt="">
                         </div>
                     </div>
@@ -575,26 +586,7 @@
         </div>
     </div>
     <!-- Modal starts here... -->
-    <!-- <div class="modal fade" id="myModal-submit" data-backdrop="static">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h3 class="modal-title">Submit Test?</h3>
-                    <button class="close" data-dismiss="modal">
-                        <span>&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    Your Test will be submitted
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-success rounded-pill" data-dismiss="modal"><a href="submit.html">Submit</a></button>
-                    <button class="btn btn-danger rounded-pill" data-dismiss="modal">
-                        Go Back
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div> -->
+    <script src="minisc.js"></script>
+    <script src="timer.js"></script>
 </body>
 </html>

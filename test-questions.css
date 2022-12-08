@@ -34,3 +34,13 @@ body{
 .a-submit{
     text-decoration: none;
 }
+#value-box{
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    height: 30px;
+    width: 60px;
+    padding: 3px 3px 3ox 3px;
+    text-align: center;
+    background-color: azure;
+    margin: 20px;
+}
