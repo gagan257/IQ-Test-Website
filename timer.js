@@ -3,8 +3,6 @@ var min=0;
 var timer=false;
 
     window.addEventListener('load',start) 
-    
-
     function start(){
         timer=true;
         stopwatch();
@@ -35,7 +33,6 @@ function finish(){
     var y=document.getElementById('timer-min').innerHTML;
 
     localStorage.setItem("sec",x);
-    localStorage.setItem("min",y);
     localStorage.setItem("min",y);
     console.log('the seconds are: '+localStorage.getItem('sec'));
     console.log('the minutes are: '+localStorage.getItem('min'));
