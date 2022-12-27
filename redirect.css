@@ -1,0 +1,21 @@
+.loading{
+    height: 50px;
+    width: 50px;
+}
+.container{
+    background-color: azure;
+}
+#mynavbar{
+    background-color: purple;
+}
+.typed-out{
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 20 rem;
+    width: 0;
+    animation: typing 6s forwards;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
